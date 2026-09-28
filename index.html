@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#8b4513">
+
+    <meta
+        name="description"
+        content="Coffee PWA - Descubre nuestros cafés favoritos."
+    >
+
+    <link rel="manifest" href="manifest.json">
+
+    <link
+        rel="apple-touch-icon"
+        href="images/icons/logoicon-192x192.png"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Coffee PWA</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="logo">
+            ☕ Coffee PWA
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#cafes">Cafés</a>
+            <a href="#nosotros">Nosotros</a>
+        </nav>
+
+        <button id="installButton" class="install-button">
+            📲 Instalar
+        </button>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-small">
+                    ☕ HECHO PARA LOS AMANTES DEL CAFÉ
+                </span>
+
+                <h1>
+                    Tu momento perfecto
+                    <span>comienza con un café.</span>
+                </h1>
+
+                <p>
+                    Descubre diferentes sabores, aromas y estilos
+                    de café en nuestra Coffee PWA.
+                </p>
+
+                <a href="#cafes" class="hero-button">
+                    Ver nuestros cafés ☕
+                </a>
+
+            </div>
+
+            <div class="hero-decoration">
+                ☕
+            </div>
+
+        </section>
+
+
+        <!-- CAFÉS -->
+        <section id="cafes" class="coffee-section">
+
+            <div class="section-title">
+
+                <span>☕ NUESTRA CARTA</span>
+
+                <h2>
+                    Elige tu café favorito
+                </h2>
+
+                <p>
+                    Explora nuestra selección de bebidas.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar un café..."
+                >
+
+                <button id="clearSearch">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <!-- CATEGORÍAS -->
+
+            <div class="categories">
+
+                <button
+                    class="category active"
+                    data-category="todos"
+                >
+                    Todos
+                </button>
+
+                <button
+                    class="category"
+                    data-category="caliente"
+                >
+                    ☕ Calientes
+                </button>
+
+                <button
+                    class="category"
+                    data-category="frio"
+                >
+                    🧊 Fríos
+                </button>
+
+                <button
+                    class="category"
+                    data-category="especial"
+                >
+                    ⭐ Especiales
+                </button>
+
+            </div>
+
+
+            <!-- TARJETAS -->
+
+            <div class="container"></div>
+
+
+            <p id="noResults" class="no-results">
+                No encontramos cafés con esa búsqueda.
+            </p>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+
+        <section id="nosotros" class="about">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    ☕
+                </div>
+
+                <div>
+
+                    <span>COFFEE PWA</span>
+
+                    <h2>
+                        Una experiencia sencilla y agradable
+                    </h2>
+
+                    <p>
+                        Nuestra aplicación permite consultar diferentes
+                        opciones de café desde cualquier dispositivo,
+                        ofreciendo una experiencia rápida, moderna
+                        y adaptable.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL -->
+
+    <div id="coffeeModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal">
+                ×
+            </button>
+
+            <img id="modalImage" src="" alt="">
+
+            <div class="modal-info">
+
+                <span>COFFEE PWA</span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <button id="modalCloseButton">
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <div>
+            ☕ <strong>Coffee PWA</strong>
+        </div>
+
+        <p>
+            Una pequeña experiencia hecha con HTML, CSS y JavaScript.
+        </p>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

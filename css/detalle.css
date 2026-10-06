@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fdfdfd;
+    font-family: "Nunito", sans-serif;
+    color: #333;
+}
+
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+nav h1 {
+    color: #e74c3c;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+
+.detalle-container {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.detalle-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.informacion {
+    padding: 30px;
+    text-align: left;
+}
+
+
+.informacion h2 {
+    color: #e74c3c;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+.informacion > p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.datos {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+.datos p {
+    margin-bottom: 12px;
+}
+
+
+.datos p:last-child {
+    margin-bottom: 0;
+}
+
+
+.informacion h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+
+#recomendacion-cafe {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.informacion button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.informacion button:hover {
+    background-color: #c0392b;
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 10px;
+    }
+
+    .detalle-container img {
+        height: 280px;
+    }
+
+    .informacion {
+        padding: 20px;
+    }
+
+    .informacion h2 {
+        font-size: 1.6rem;
+    }
+
+}
